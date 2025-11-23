@@ -9,7 +9,7 @@ venv
 .idea
 
 .devcontainer
-.code-workspace
+*.code-workspace
 
 tmp_audios
 *.wav
