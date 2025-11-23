@@ -1,0 +1,4 @@
+fastapi[all]
+SpeechRecognition==3.14.3
+pocketsphinx
+pydub

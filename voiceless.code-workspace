@@ -1,0 +1,15 @@
+{
+    "folders": [
+        {
+            "name": "Bot Service",
+            "path": "./tg_bot"
+        },
+        {
+            "name": "Transcriber Service", 
+            "path": "./transcribator"
+        }
+    ],
+    "settings": {
+        "python.analysis.autoImportCompletions": true
+    }
+}

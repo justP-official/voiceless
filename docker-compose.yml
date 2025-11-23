@@ -1,0 +1,22 @@
+version: '3.8'
+
+services:
+    tg_bot:
+        build: ./tg_bot
+        env_file:
+            - .env
+        depends_on:
+            - transcribator
+        restart: unless-stopped
+        volumes:
+            - ./tg_bot/src/:/src
+    
+    transcribator:
+        build: ./transcribator
+        env_file:
+            - .env
+        ports:
+            - "${TRANSCRIBATOR_PORT}:8000"
+        restart: unless-stopped
+        volumes:
+            - ./transcribator/src/:/src
